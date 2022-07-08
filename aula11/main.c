@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
 
     printf("o enderço de p eh: %p\ntamanho de p: %zu\n", &p, sizeof p);
     printf("conteudo de p: %p\n", p);
-    *p = 9;
+    *p = 9;//test
     
     printf("%d\n", *p);
 
