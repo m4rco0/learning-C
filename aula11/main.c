@@ -1,24 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(int argc, char *argv[]) {
-    int i;  //4 bytes  alocados para um int32
+int main(int x,char *v[]) {
+    char s[10] = "unknow\n"; //0-9
 
-    printf("o endereço de i eh: %p\ntamanho de i: %zu\n\n", &i, sizeof i);
+    printf("%x\n", s[7]);
+    printf("%c\n", *(s+7));
 
-    int *p;  
-    printf("o enderço de p eh: %p\ntamanho de p: %zu\n", &p, sizeof p);
-    printf("tamanho de p: %p\n\n", p);
-    
-    printf("conteudo de p: %p\n", p);
-    
-    printf("p = &i;\n\n");
-    p = &i;
-
-    printf("o enderço de p eh: %p\ntamanho de p: %zu\n", &p, sizeof p);
-    printf("conteudo de p: %p\n", p);
-    *p = 9;//test
-    
-    printf("%d\n", *p);
+    printf("%c\n", 7[s] );
+    printf("%c\n", *(7+s));
 
     return 0;
 }
